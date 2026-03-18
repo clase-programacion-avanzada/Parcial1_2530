@@ -1,0 +1,13 @@
+5
+Productos
+Tenis
+1218,Gris,28,70000,10
+1213,Blanco,36,50000,5
+%
+Sandalias
+2635,Azules,36,100000,8
+%
+Zapato colegial
+3456,Vinotinto,42,180000,7
+3457,Azul Oscuro,39,165000,4
+%

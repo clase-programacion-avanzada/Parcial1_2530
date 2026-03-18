@@ -1,0 +1,8 @@
+Factura No. 2
+Cliente: Juan Perez
+ID: 12345678
+Productos vendidos
+3456  Zapato colegial Vinotinto 42
+      $180000
+
+Valor total: $180000
