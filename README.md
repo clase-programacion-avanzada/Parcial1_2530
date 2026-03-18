@@ -1,15 +1,6 @@
-# Exámen de progrmación avanzada
+# Exámen de programación avanzada 2530
 
-Departamento de Ingeniería de sistemas
-Primer Parcial Programación Avanzada
 
-Bienvenidos al primer parcial de Programación Avanzada de la facultad de ingeniería del departamento de ingeniería de sistemas de la Pontificia Universidad Javeriana. De acuerdo con el numeral 123 del reglamento de estudiantes, constituye una falta grave "el fraude en actividades, trabajos y evaluaciones académicos...". Por lo tanto, **todos los casos de fraude identificados serán reportados**.
-Una vez iniciado el parcial, no se podrá retirar del aula hasta finalizarlo. Si se retira, el parcial será entregado una vez esté calificado.
-No se pueden utilizar dispositivos electrónicos (Computadores, Celulares, Tablets u otros dispositivos).
-
-Nombre: _________________________________________
-
-ID: _____________________________________________
 
 ## I. (20 PUNTOS) CONCEPTOS
 
@@ -24,7 +15,9 @@ ID: _____________________________________________
 <summary>Respuesta</summary>
 Opción (b). El método `append()` es una función estándar de la clase `std::string` en C++ utilizada para concatenar. (El operador `+` también es correcto pero no está listado).
 </details>
+
 2. ¿Qué hará el siguiente código?
+   
 ```cpp
 int arr[5] = {1, 2, 3, 4, 5};
 int *ptr = arr;
@@ -42,6 +35,7 @@ int *ptr = arr;
 <details>
 <summary>Respuesta</summary>
 Opción (b). Utilizando aritmética de apuntadores, `ptr + 2` desplaza la dirección de memoria dos posiciones enteras hacia adelante, apuntando al índice 2 (el tercer elemento del arreglo). Al desreferenciarlo y asignarle 10, modifica ese tercer elemento. 	</details>
+
 3. ¿Cuál es el formato correcto para abrir un archivo de texto en modo de escritura en C++?
 * [ ] a. `ofstream file("archivo.txt", ios::in);`
 * [ ] b. `ifstream file("archivo.txt", ios::out);`
@@ -53,6 +47,7 @@ Opción (b). Utilizando aritmética de apuntadores, `ptr + 2` desplaza la direcc
 <summary>Respuesta</summary>
 Opción (c). La clase `ofstream` se utiliza para escritura (output file stream) y la bandera `ios::out` especifica explícitamente el modo de escritura.
 </details>
+
 4. En C++, el operador `new` se utiliza para liberar memoria asignada dinámicamente.
 * [ ] a. Verdadero
 * [ ] b. Falso
@@ -62,6 +57,7 @@ Opción (c). La clase `ofstream` se utiliza para escritura (output file stream) 
 <summary>Respuesta</summary>
 Opción (b) Falso. El operador `new` se utiliza para asignar memoria dinámicamente. Para liberarla, se utiliza el operador `delete` o `delete[]`.
 </details>
+
 5. ¿Cual es la forma correcta de recibir un apuntador por referencia en C++?
 * [ ] a. `void funcion(int *&ptr){...}`
 * [ ] b. `void funcion(int &ptr){...}`
@@ -73,6 +69,7 @@ Opción (b) Falso. El operador `new` se utiliza para asignar memoria dinámicame
 <summary>Respuesta</summary>
 Opción (a). La sintaxis correcta en C++ para una referencia a un tipo de dato es `Tipo &amp;nombre`. Si el tipo de dato es un apuntador a entero (`int *`), la sintaxis correcta es `int *&amp;ptr`.
 </details>
+
 6. ¿Qué devuelve la función `strcmp("hola", "hola");`?
 * [ ] a. true
 * [ ] b. false
@@ -84,6 +81,7 @@ Opción (a). La sintaxis correcta en C++ para una referencia a un tipo de dato e
 <summary>Respuesta</summary>
 Opción (c). La función `strcmp` devuelve 0 cuando ambas cadenas de caracteres alfanuméricos son exactamente iguales.
 </details>
+
 7. ¿Qué función de la clase `ifstream` se utiliza para verificar si la apertura del archivo fue exitosa?
 * [ ] a. `eof()`
 * [ ] b. `fail()`
@@ -95,6 +93,7 @@ Opción (c). La función `strcmp` devuelve 0 cuando ambas cadenas de caracteres 
 <summary>Respuesta</summary>
 Opción (c). La función `good()` verifica si el estado del stream es válido y no se ha producido ningún error (incluyendo que el archivo se haya abierto correctamente). `fail()` también se usa, pero requiere ser negada, y la opción (d) no es el nombre de la función en sí.
 </details>
+
 8. Dada la estructura:
 ```cpp
 struct Persona {
@@ -118,6 +117,7 @@ Persona *p = arr;
 <summary>Respuesta</summary>
 Opción (b). `*(p+i)` desreferencia la dirección desplazada correctamente para obtener el objeto `Persona`, del cual luego se accede al atributo `.nombre`.
 </details>
+
 9. Dado `int numeros[5];`, ¿qué muestra por pantalla la instrucción `cout << numeros << endl;`?
 * [ ] a. El valor del primer elemento del arreglo
 * [ ] b. La dirección de memoria del primer elemento
@@ -129,6 +129,7 @@ Opción (b). `*(p+i)` desreferencia la dirección desplazada correctamente para 
 <summary>Respuesta</summary>
 Opción (b). Al pasar el nombre de un arreglo a `cout`, el arreglo decae implícitamente a un apuntador a su primer elemento, imprimiendo su dirección en memoria.
 </details>
+
 10. Al usar memoria dinámica con apuntadores en C++, siempre que sea necesario liberar memoria se usa `delete` o `delete[]` con el fin de no desperdiciar la memoria.
 * [ ] a. Verdadero
 * [ ] b. Falso
